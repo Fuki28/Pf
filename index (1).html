@@ -1,107 +1,439 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
     <title>LLC - Asesoría Legal</title>
 </head>
+
 <body>
-
-<section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!--logo de la pagina-->
+            <img src="C:\xampp\htdocs\ProyectoFN\img\logo.png" width="200px">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <!--botones del menu-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">La Firma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Areas de Practica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proceso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonios</a>
+                    </li>
+                    <!--boton de necesito un aliado-->
+                    <a href="#formulario" class="bt-aliado">Necesito un aliado
+                        <ion-icon name="arrow-redo-outline"></ion-icon>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div>
-        <h1>¿Cuántas decisiones más vas a tomar sin respaldo legal… hasta que sea demasiado tarde?</h1>
-        <p>Cada semana, personas y empresas pierden oportunidades, dinero o tranquilidad por una sola razón: no tener claridad legal en el momento correcto.</p>
-        <p>Hay situaciones que no se pueden improvisar.</p>
+        <!--Sección 1: Hero-->
+        <h1>Tu ALIADO en soluciones legales</h1>
+        <p>El manejo de un asunto jurídico exige más que intervención puntual. Requiere
+            seguimiento, criterio y una estructura clara de actuación desde el inicio. LLC
+            asume cada caso con responsabilidad directa
+            Se revisa, se ordena y se conduce bajo fundamentos que puedan sostenerse en
+            el tiempo.</p>
+        <!--boton de necesito un aliado
+        y al aplastar redirige a la clase formulario-->
+        <!--en estilos css se da la apariencia de botton-->
+        <a href="#formulario" class="bt-aliado">
+            Necesito un aliado <ion-icon name="arrow-redo-outline"></ion-icon>
+        </a>
+        <!--imagen de logo en version grande-->
+        <div clas="logo-grande">
+            <img src="C:\xampp\htdocs\ProyectoFN\img\logo grande.png" width="25%">
+        </div>
+        <hr>
+    </div>
+    <!--Sección 2: Base y Trayectoria-->
+    <section class="bases">
+        <div class="base">
+            <h2>5+</h2>
+            <p>Años de experiencia</p>
+        </div>
+        <div class="base">
+            <h2>250+</h2>
+            <p>Casos Atendidos</p>
+        </div>
+        <div class="base">
+            <h2>200+</h2>
+            <p>Casos de Éxito</p>
+        </div>
+        <div class="base">
+            <h2>97%</h2>
+            <p>Valoración del Servicio</p>
+        </div>
+    </section>
+    <!--Sección 3: Sobre Nosotros-->
+    <!--etiqueta sobre nosotros-->
+    <div class="sobre-nosotros">
+        SOBRE NOSOTROS
+        <h2>El derecho se ejerce mejor cuando cada caso tiene
+            <span>NOMBRE PROPIO</span>
+        </h2>
+    </div>
+    <div class="sobre-liberity">
+        <h2>Legal Corporate parte de una premisa concreta
+            <span>Cada caso merece mas</span>
+        </h2>
+        <div class="realizar">
+            <p>Combinamos el pensamiento estratégico con una ejecución precisa para guiar a
+                los clientes a través de situaciones complejas con confianza. Nuestro enfoque
+                está fundamentado en el profesionalismo, la discreción y un profundo
+                compromiso con lograr los mejores resultados posibles. Porque su caso merece
+                más que una asesoría, merece una defensa.</p>
+        </div>
+        <a href="#formulario" class="trabajar">
+            Necesito trabajar con ustedes<ion-icon name="arrow-redo-outline"></ion-icon>
+        </a>
+    </div>
+    <!--Sección 4: Areas de Intervención  -->
+    <div class="sobre-nosotros">
+        <div class="nuestros-servicios">
+            NUESTROS SERVICIOS
+        </div>
+        <h2>AREAS DE PRACTICA
+        </h2>
+    </div>
+    <div class="servicios">
+        <p>Ofrecemos servicios legales confiables con experiencia comprobada y un
+            enfoque centrado en resultados. </p>
+    </div>
+
+    <!--carrusel de fotos-->
+    <!--carrusel de fotos-->
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- Área Corporativo -->
+                <div class="corporativo">
+                    CORPORATIVO
+                    <h1>Derecho corporativo y comercial</h1>
+                    <img src="img/derechocorporativo.webp" class="d-block w-100" alt="Derecho corporativo">
+                    <p>
+                        Acompañamiento legal a empresas en su funcionamiento ordinario, ya sea constitución,
+                        estructura operativa, elaboración y revisión de contratos, y principalmente toma de
+                        decisiones con implicación jurídica.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Área Civil -->
+                <div class="civil">
+                    CIVIL
+                    <h1>Relaciones y obligaciones</h1>
+                    <img src="img/relacionesyobligaciones.jpg" class="d-block w-100" alt="Relaciones y obligaciones">
+                    <p>
+                        Intervención en conflictos derivados de deudas, incumplimientos y responsabilidades civiles,
+                        estableciendo una base legal clara para su resolución o reclamación.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Área Laboral -->
+                <div class="laboral">
+                    LABORAL
+                    <h1>Empleador y trabajador</h1>
+                    <img src="img/laboral.webp" class="d-block w-100" alt="Derecho laboral">
+                    <p>
+                        Asesoría en contratación, terminación laboral, conflictos individuales y cumplimiento
+                        de obligaciones laborales.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Área Societario -->
+                <div class="societario">
+                    SOCIETARIO
+                    <h1>Estructura y dinámica empresarial</h1>
+                    <img src="img/societario.webp" class="d-block w-100" alt="Societario">
+                    <p>
+                        Asesoría en la organización interna de sociedades, relaciones entre socios, reformas
+                        estatutarias
+                        y resolución de conflictos corporativos.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Área Tributario -->
+                <div class="tributario">
+                    TRIBUTARIO
+                    <h1>Obligaciones fiscales</h1>
+                    <img src="img/tributario.webp" class="d-block w-100" alt="Tributario">
+                    <p>
+                        Análisis y cumplimiento de cargas tributarias, planificación fiscal y atención de requerimientos
+                        de la administración.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Área Inquilinato -->
+                <div class="inquilinato">
+                    INQUILINATO
+                    <h1>Arrendamientos y conflictos derivados</h1>
+                    <img src="img/inquilinato.jpg" class="d-block w-100" alt="Inquilinato">
+                    <p>
+                        Gestión de relaciones entre arrendador e inquilino, cumplimiento de contratos, recuperación de
+                        inmuebles
+                        y resolución de controversias bajo el marco legal vigente.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Área Recuperación de Cartera -->
+                <div class="cartera">
+                    RECUPERACIÓN DE CARTERA
+                    <h1>Obligaciones pendientes</h1>
+                    <img src="img/cartera.webp" class="d-block w-100" alt="Recuperación de cartera">
+                    <p>
+                        Estructuración de procesos para el cobro de deudas, priorizando vías legales que permitan una
+                        recuperación efectiva.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Área Familia -->
+                <div class="familia">
+                    FAMILIA
+                    <h1>Relaciones jurídicas personales</h1>
+                    <img src="img/familia.jpg" class="d-block w-100" alt="Familia">
+                    <p>
+                        Procesos de divorcio, pensiones y custodia abordados con criterio jurídico claro, buscando
+                        ordenar
+                        situaciones que requieren estabilidad legal.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Área Sucesorio -->
+                <div class="sucesorio">
+                    SUCESORIO
+                    <h1>Transmisión y orden patrimonial</h1>
+                    <img src="img/sucesorio.webp" class="d-block w-100" alt="Sucesorio">
+                    <p>
+                        Asesoría en procesos de herencia, partición de bienes y planificación sucesoria, estableciendo
+                        una
+                        distribución clara del patrimonio conforme a derecho y evitando conflictos entre interesados.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Área Propiedad Intelectual -->
+                <div class="propiedad-intelectual">
+                    PROPIEDAD INTELECTUAL
+                    <h1>Protección de activos intangibles</h1>
+                    <img src="img/propiedadintelectual.webp" class="d-block w-100" alt="Propiedad intelectual">
+                    <p>
+                        Registro y defensa de derechos sobre marcas, obras y creaciones, garantizando su uso exclusivo
+                        y evitando vulneraciones.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Área Administrativo -->
+                <div class="administrativo">
+                    ADMINISTRATIVO
+                    <h1>Administración con entidades del Estado</h1>
+                    <img src="img/administrativo.webp" class="d-block w-100" alt="Administrativo">
+                    <p>
+                        Gestión de procedimientos administrativos, recursos y defensa ante actuaciones de entidades del
+                        Estado.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Área Derecho de Competencia -->
+                <div class="competencia">
+                    DERECHO DE COMPETENCIA
+                    <h1>Regulación del mercado</h1>
+                    <img src="img/competencia.webp" class="d-block w-100" alt="Derecho de competencia">
+                    <p>
+                        Asesoría en prácticas comerciales, prevención de conductas restrictivas y cumplimiento de
+                        normativa
+                        de competencia.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <!--Procesos LLC-->
+    <section>
+        <h2>Proceso LLC</h2>
+
+        <p>
+            El tratamiento de cada caso sigue una secuencia definida. Desde la revisión inicial hasta su resolución,
+            el proceso se estructura para resguardar sus intereses y sostener decisiones jurídicas consistentes.
+        </p>
+
+        <a href="#formulario" class="bt-aliado">¡Quiero empezar YA!
+            <ion-icon name="arrow-redo-outline"></ion-icon></a>
 
         <div>
-            <p>Contratos mal hechos</p>
-            <p>Acuerdos mal entendidos</p>
-            <p>Procesos que se complican más de lo necesario</p>
+            <h3>01 Revisión inicial</h3>
+            <p>Antes de cualquier intervención, se examina el caso a partir de la información proporcionada. Se
+                identifican los elementos jurídicos relevantes y las posibles vías de actuación, descartando
+                aproximaciones imprecisas desde el inicio.</p>
         </div>
-
-        <p>Y cuando reaccionas… muchas veces ya es tarde.</p>
-        <div>
-            <a href="#">Hablar con un asesor ahora</a>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div>
-        <h2>¿Te suena familiar?</h2>
 
         <div>
-            <p>No sabes si lo que estás firmando te protege realmente</p>
-            <p>Has tenido problemas legales que pudieron evitarse</p>
-            <p>Te preocupa tomar decisiones sin respaldo profesional</p>
-            <p>Sientes que necesitas asesoría, pero no sabes por dónde empezar</p>
-            <p>Has confiado antes… y no obtuviste resultados</p>
+            <h3>02 Planteamiento del caso</h3>
+            <p>Se expone la estructura del asunto; alcance, implicaciones y escenario legal. Este punto le va a
+                permitir
+                comprender la posición desde la cual se trabajará.</p>
         </div>
-
-        <p>No estás solo. Y no tiene por qué seguir siendo así.</p>
-    </div>
-</section>
-
-<section>
-    <div>
-        <h2>Un enfoque diferente</h2>
-
-        <p>La mayoría busca ayuda legal cuando el problema ya explotó.</p>
-        <p>Pero ahí… ya no se trata de prevenir. Se trata de reparar.</p>
-
-        <p>En LLC creemos en algo distinto.</p>
-
-        <p>El derecho no debería ser un recurso de emergencia.</p>
-        <p>Debería ser una herramienta de control.</p>
-
-        <p>Por eso trabajamos contigo antes, durante y después.</p>
-        <p>Para que no solo resuelvas… sino que evites.</p>
-
-        <p>Porque cuando tienes claridad legal, tomas mejores decisiones.</p>
-        <p>Y cuando tomas mejores decisiones… los resultados cambian.</p>
 
         <div>
-            <a href="#">Quiero asesoría profesional</a>
+            <h3>03 Definición de estrategia</h3>
+            <p>Con el caso delimitado, se establece una línea de acción coherente y jurídicamente sostenible,
+                orientada
+                a conducir el proceso sin desviaciones innecesarias.</p>
         </div>
-    </div>
-</section>
-
-<section>
-    <div>
-        <h2>Decisiones que cambian todo</h2>
-
-        <p>Tu situación no es un caso más.</p>
-        <p>Es una decisión que puede marcar un antes y un después.</p>
-
-        <p>No se trata de llenar documentos.</p>
-        <p>Se trata de entender, analizar y actuar con precisión.</p>
-
-        <p>Cada acción legal bien tomada evita problemas futuros.</p>
-        <p>Cada decisión mal tomada… los multiplica.</p>
-    </div>
-</section>
-
-<section>
-    <div>
-        <h2>Liberity Legal Corporate</h2>
-
-        <p>Nace con un enfoque claro:</p>
-        <p>hacer que lo legal deje de ser un obstáculo… y se convierta en una ventaja.</p>
-
-        <p>Aquí no trabajamos con respuestas genéricas.</p>
-        <p>Trabajamos con criterio, estrategia y enfoque real en cada caso.</p>
-
-        <p>Porque en el mundo legal, no gana el que actúa rápido…</p>
-        <p>gana el que actúa con claridad.</p>
-
-        <p>No necesitas esperar a tener un problema.</p>
-        <p>Necesitas estar preparado antes de que aparezca.</p>
 
         <div>
-            <a href="#">Quiero tomar acción</a>
+            <h3>04 Ejecución y seguimiento</h3>
+            <p>El caso se desarrolla con control continuo, ajustando únicamente cuando el proceso lo exige,
+                asegurando
+                que cada paso responda a la línea jurídica establecida.</p>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!--testimonios-->
+    <section>
+        <h2>Casos atendidos, desde la experiencia del cliente</h2>
+
+        <div>
+            <strong>Jorge L. (Inquilinato)</strong>
+            <p>★★★★★</p>
+            <p>“Estoy muy agradecido con ustedes. Resolvieron mi problema con un arrendamiento que ya se había
+                extendido
+                demasiado. Tomaron el control de mi caso y lo ejecutaron para resolverlo dentro del marco legal, y
+                más
+                que todo no me dieron complicaciones y me explicaron todo muy claro. Gracias”</p>
+            <small>Cliente Verificado</small>
+        </div>
+
+        <div>
+            <strong>Steve B. (Conflicto civil)</strong>
+            <p>★★★★★</p>
+            <p>“Llegué con una deuda que no lograba resolver desde hace tiempo. Aquí ordenaron el caso desde el
+                inicio y
+                definieron exactamente qué hacer. El proceso avanzó sin cambios innecesarios y finalmente pude
+                recuperar
+                lo que correspondía.”</p>
+            <small>Cliente Verificado</small>
+        </div>
+    </section>
+
+    <!--Clientes que confiaron-->
+    <section>
+        <p>Clientes que CONFIARON en nosotros</p>
+        <p>GEL BP &nbsp;&nbsp; KODIAK PLAZA &nbsp;&nbsp; Grupo Supermercado &nbsp;&nbsp; AECOFICAREM &nbsp;&nbsp;
+            B&amp;C &nbsp;&nbsp; K &nbsp;&nbsp; WorQ</p>
+    </section>
+
+    <!--FAQS-->
+    <section>
+        <h2>Antes de avanzar, conviene tener claridad</h2>
+
+        <p>
+            Iniciar un asunto legal implica tomar decisiones que deben estar bien fundadas desde
+            el principio. Estas preguntas recogen los aspectos esenciales que suelen surgir antes de
+            exponer un caso y permiten entender cómo se aborda cada situación desde un criterio
+            jurídico definido.
+        </p>
+
+        <h3>¿Qué ocurre después de enviar mi caso?</h3>
+        <p>Se realiza una revisión inicial de la información proporcionada para identificar su estructura jurídica y
+            determinar si procede una intervención y qué pasos debemos seguir para que el caso tenga éxito.</p>
+
+        <h3>¿Recibiré una respuesta concreta o general?</h3>
+        <p>La respuesta se basa en el contenido del caso. Se entrega un criterio jurídico inicial, no una
+            aproximación
+            genérica.</p>
+
+        <h3>¿Es necesario adjuntar documentos?</h3>
+        <p>No es obligatorio en el primer contacto, pero facilita una valoración más precisa y reduce
+            interpretaciones
+            incompletas.</p>
+
+        <h3>¿Cómo se define el costo del servicio?</h3>
+        <p>Depende del tipo de asunto, su complejidad y el alcance requerido. Las condiciones y honorarios se
+            establecen
+            con claridad antes de iniciar.</p>
+
+        <h3>¿Mi caso será tratado directamente por la firma?</h3>
+        <p>Sí. Cada asunto se asume con seguimiento directo con el abogado especialista, sin intermediaciones
+            innecesarias.</p>
+
+        <a href="#formulario" class="bt-empezar">Estoy listo para empezar
+            <ion-icon name="arrow-redo-outline"></ion-icon></a>
+    </section>
+
+    <!--Contactos-->
+    <section>
+        <form id="formulario" class="formulario">
+            <h2>Hablemos de su asunto Legal</h2>
+            <a href="#formulario" class="bt-conversemos">Conversemos
+                <ion-icon name="arrow-redo-outline"></ion-icon></a>
+            <h3>Contacto</h3>
+            <p>¿Tienes una pregunta legal o necesitas orientación profesional? Contáctanos para programar una consulta y
+                recibir asesoría legal clara y confidencial adaptada a tus necesidades.</p>
+            <p>WhatsApp</p>
+            <a href="https://wa.me/593962693162">+593 96 269 3162</a>
+            <form>
+                <label>Nombre</label>
+                <input type="text">
+                <label>Apellido</label>
+                <input type="text">
+                <label>Correo Electrónico</label>
+                <input type="email">
+                <label>Número de Teléfono</label>
+                <input type="tel">
+                <label>Cuéntanos sobre tu caso</label>
+                <textarea></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
+            <img src="" alt="">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Liberty Legal Corporate
+    </footer>
+    </form>
+
+    <script src="public/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

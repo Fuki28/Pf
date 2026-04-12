@@ -1,0 +1,38 @@
+/*al agregar ya los estilso a este hr le cambian solo el color a blanco le puse
+de color negro para q se pueda ver ya q le pongan los colores q son solo le
+cambian a blanco*/
+
+hr {
+  all: unset;              /* elimina TODOS los estilos por defecto */
+  display: block;          /* lo convierte en bloque */
+  width: auto;             /* ancho de la linea */
+  height: 6px;             /* grosor de la línea */
+  background-color: black;  /* color negro sólido */
+}
+/*eso es para q se hagan lo de experiencia y eso horizonatl y al centro estaba probando nomas jaja
+ya miren si le cambian esto y hacen uno ustedes porq no sabia como hacer bien esto
+.bases {
+  display: flex;               /* coloca los bloques en fila 
+  justify-content: space-around;
+  align-items: center;
+  color: black;                 /* texto blanco 
+  padding: 30px 20px;
+}
+
+.base {
+  text-align: center;
+}
+
+.base h2 {
+  font-size: 45px;           /* tamaño grande para la cifra 
+  margin: 0;
+  font-weight: bold;
+}
+
+.base p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+
+
