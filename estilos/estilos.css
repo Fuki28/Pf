@@ -1,38 +1,53 @@
-/*al agregar ya los estilso a este hr le cambian solo el color a blanco le puse
-de color negro para q se pueda ver ya q le pongan los colores q son solo le
-cambian a blanco*/
+/* ============================
+   BOTÓN UNIVERSAL
+   Aplica a todas las clases de botón
+   ============================ */
+.bt-aliado,
+.bt-empezar,
+.bt-conversemos,
+.trabajar {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
 
-hr {
-  all: unset;              /* elimina TODOS los estilos por defecto */
-  display: block;          /* lo convierte en bloque */
-  width: auto;             /* ancho de la linea */
-  height: 6px;             /* grosor de la línea */
-  background-color: black;  /* color negro sólido */
-}
-/*eso es para q se hagan lo de experiencia y eso horizonatl y al centro estaba probando nomas jaja
-ya miren si le cambian esto y hacen uno ustedes porq no sabia como hacer bien esto
-.bases {
-  display: flex;               /* coloca los bloques en fila 
-  justify-content: space-around;
-  align-items: center;
-  color: black;                 /* texto blanco 
-  padding: 30px 20px;
-}
+    background-color: #b8962e;  /* dorado del botón */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
 
-.base {
-  text-align: center;
-}
+    padding: 10px 10px 10px 24px;
+    border-radius: 999px;        /* cápsula perfecta */
 
-.base h2 {
-  font-size: 45px;           /* tamaño grande para la cifra 
-  margin: 0;
-  font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.base p {
-  margin: 5px 0 0;
-  font-size: 16px;
+.bt-aliado:hover,
+.bt-empezar:hover,
+.bt-conversemos:hover,
+.trabajar:hover {
+    background-color: #a07d20;   /* dorado más oscuro al hover */
+    transform: scale(1.02);
 }
 
+/* ============================
+   ÍCONO FLECHA (el círculo con la diagonal)
+   ============================ */
+.icono-flecha {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #EAECEF;   /* círculo gris claro */
+    flex-shrink: 0;              /* que no se achique */
 
+    /* flecha diagonal como SVG en background */
+    background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.5911 14.8911L31.9735 16.0531M31.9735 16.0531L30.8115 28.4355M31.9735 16.0531L14.5593 30.4794' stroke='%23111827' stroke-width='2.08515' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}

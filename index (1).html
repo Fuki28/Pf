@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <!--logo de la pagina-->
-            <img src="C:\xampp\htdocs\ProyectoFN\img\logo.png" width="200px">
+            <img src="/img/logo menu.webp" width="200px">
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <!--botones del menu-->
@@ -31,7 +31,7 @@
                     </li>
                     <!--boton de necesito un aliado-->
                     <a href="#formulario" class="bt-aliado">Necesito un aliado
-                        <ion-icon name="arrow-redo-outline"></ion-icon>
+                        <span class="icono-flecha"></span>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -55,11 +55,14 @@
         y al aplastar redirige a la clase formulario-->
         <!--en estilos css se da la apariencia de botton-->
         <a href="#formulario" class="bt-aliado">
-            Necesito un aliado <ion-icon name="arrow-redo-outline"></ion-icon>
+            Necesito un aliado <span class="icono-flecha"></span>
         </a>
         <!--imagen de logo en version grande-->
-        <div clas="logo-grande">
-            <img src="C:\xampp\htdocs\ProyectoFN\img\logo grande.png" width="25%">
+        <div class="logo-grande">
+            <svg width="340" height="311" viewBox="0 0 340 311" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M332.729 187.647C330.099 170.996 324.219 150.156 312.304 138.159C296.985 122.697 275.218 115.922 253.812 119.697C233.077 123.317 218.635 139.089 210.898 157.913C201.149 181.7 199.911 214.331 203.832 239.773C213.838 237.033 222.4 226.225 226.836 217.382C230.808 209.47 233.438 201.558 236.069 192.87L243.084 192.819L241.64 249.237H205.998C209.454 262.372 215.282 274.111 224.515 283.522C236.12 296.088 252.007 302.708 269.132 301.932C277.849 301.725 285.74 299.501 293.735 296.192C303.329 292.21 311.375 285.953 317.204 277.162C325.766 264.337 330.821 249.806 332.833 234.602L338.764 234.654V301.57C336.804 301.725 334.896 301.777 332.729 301.725C331.079 294.382 328.397 287.866 323.909 281.661C310.344 297.795 292.033 307.672 271.195 309.689C257.01 310.878 243.135 309.792 229.57 305.241C203.728 296.554 183.664 275.714 175.411 249.185H73.3346L73.283 242.618C84.4758 242.411 101.136 244.221 103.148 228.966C104.334 220.071 104.282 211.176 104.334 202.127L104.386 192.301L0.555486 192.353L0.503906 185.786C11.903 185.631 28.6665 187.389 30.4718 171.72C31.555 162.101 31.6581 152.741 31.6581 142.864V48.334C31.6581 40.2669 31.4518 32.7686 31.0392 24.8048C30.6265 17.048 28.5633 9.60139 19.8979 8.20515C13.3473 7.1709 7.20928 7.1709 0.503906 7.1709L0.555486 0.5H95.7202L95.7718 7.22262C87.9317 7.17091 80.6074 7.06748 72.9735 7.94659C67.0419 8.67056 62.6576 12.4973 61.6776 18.6511C60.4396 26.8216 60.2333 34.8888 60.2333 43.473V153.465C60.2333 159.878 60.5428 165.566 60.9554 171.823C61.3165 177.822 65.0818 182.735 71.1167 184.131C75.7588 185.217 80.6074 185.734 85.5074 185.734H104.489L104.437 105.218C104.437 96.9954 104.231 89.342 103.767 81.1714C103.302 73.518 101.085 66.4334 92.677 65.0888C86.1264 64.0546 79.9884 64.0546 73.283 64.0546L73.3346 57.3837H168.499L168.551 64.1063C160.711 64.0546 153.386 63.9512 145.753 64.8303C139.821 65.5542 135.437 69.381 134.457 75.5348C133.219 83.6536 133.012 91.7725 133.012 100.305L132.961 182.166C150.601 175.029 158.441 152.741 163.445 135.883L170.408 135.831L168.912 192.353H132.909L133.58 228.19C133.838 234.602 137.603 239.36 143.793 241.066C148.332 241.894 152.974 242.566 157.668 242.566L173.451 242.618C166.694 211.642 171.027 178.494 187.223 151.19C195.94 136.504 208.474 125.489 224.051 118.766C238.338 112.613 253.503 110.337 269.08 111.578C282.027 112.664 293.838 116.698 304.773 123.472C311.891 127.868 318.236 132.625 323.858 139.503C327.881 131.488 329.996 123.576 330.976 114.836H337.062L338.713 187.699L332.729 187.647Z" fill="white" stroke="#022032" stroke-miterlimit="10"/>
+</svg>
+
         </div>
         <hr>
     </div>
@@ -102,7 +105,7 @@
                 más que una asesoría, merece una defensa.</p>
         </div>
         <a href="#formulario" class="trabajar">
-            Necesito trabajar con ustedes<ion-icon name="arrow-redo-outline"></ion-icon>
+            Necesito trabajar con ustedes <span class="icono-flecha"></span>
         </a>
     </div>
     <!--Sección 4: Areas de Intervención  -->
@@ -294,7 +297,8 @@
         </p>
 
         <a href="#formulario" class="bt-aliado">¡Quiero empezar YA!
-            <ion-icon name="arrow-redo-outline"></ion-icon></a>
+            <span class="icono-flecha"></span>
+        </a>
 
         <div>
             <h3>01 Revisión inicial</h3>
@@ -332,22 +336,22 @@
         <div>
             <strong>Jorge L. (Inquilinato)</strong>
             <p>★★★★★</p>
-            <p>“Estoy muy agradecido con ustedes. Resolvieron mi problema con un arrendamiento que ya se había
+            <p>"Estoy muy agradecido con ustedes. Resolvieron mi problema con un arrendamiento que ya se había
                 extendido
                 demasiado. Tomaron el control de mi caso y lo ejecutaron para resolverlo dentro del marco legal, y
                 más
-                que todo no me dieron complicaciones y me explicaron todo muy claro. Gracias”</p>
+                que todo no me dieron complicaciones y me explicaron todo muy claro. Gracias"</p>
             <small>Cliente Verificado</small>
         </div>
 
         <div>
             <strong>Steve B. (Conflicto civil)</strong>
             <p>★★★★★</p>
-            <p>“Llegué con una deuda que no lograba resolver desde hace tiempo. Aquí ordenaron el caso desde el
+            <p>"Llegué con una deuda que no lograba resolver desde hace tiempo. Aquí ordenaron el caso desde el
                 inicio y
                 definieron exactamente qué hacer. El proceso avanzó sin cambios innecesarios y finalmente pude
                 recuperar
-                lo que correspondía.”</p>
+                lo que correspondía."</p>
             <small>Cliente Verificado</small>
         </div>
     </section>
@@ -394,42 +398,42 @@
             innecesarias.</p>
 
         <a href="#formulario" class="bt-empezar">Estoy listo para empezar
-            <ion-icon name="arrow-redo-outline"></ion-icon></a>
+            <span class="icono-flecha"></span>
+        </a>
     </section>
 
     <!--Contactos-->
     <section>
-        <form id="formulario" class="formulario">
+        <div id="formulario" class="formulario">
             <h2>Hablemos de su asunto Legal</h2>
             <a href="#formulario" class="bt-conversemos">Conversemos
-                <ion-icon name="arrow-redo-outline"></ion-icon></a>
+                <span class="icono-flecha"></span>
+            </a>
             <h3>Contacto</h3>
             <p>¿Tienes una pregunta legal o necesitas orientación profesional? Contáctanos para programar una consulta y
                 recibir asesoría legal clara y confidencial adaptada a tus necesidades.</p>
             <p>WhatsApp</p>
             <a href="https://wa.me/593962693162">+593 96 269 3162</a>
-            <form>
+            <form action="https://formspree.io/f/TU_ID_AQUI" method="POST">
                 <label>Nombre</label>
-                <input type="text">
+                <input type="text" name="nombre">
                 <label>Apellido</label>
-                <input type="text">
+                <input type="text" name="apellido">
                 <label>Correo Electrónico</label>
-                <input type="email">
+                <input type="email" name="correo">
                 <label>Número de Teléfono</label>
-                <input type="tel">
+                <input type="tel" name="telefono">
                 <label>Cuéntanos sobre tu caso</label>
-                <textarea></textarea>
+                <textarea name="mensaje"></textarea>
                 <button type="submit">Enviar mensaje</button>
             </form>
-
-            <img src="" alt="">
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
         © 2026 Liberty Legal Corporate
     </footer>
-    </form>
 
     <script src="public/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
