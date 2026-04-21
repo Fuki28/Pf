@@ -20,6 +20,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 body {
@@ -148,17 +149,26 @@ en pantalla grande: logo + links + boton
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28234, 236, 239, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* en celular: esconde hamburguesa y links, solo logo y boton */
+/* en celular: mantén el menú responsive y aplica estilo al colapsado */
 @media (max-width: 991px) {
-
-    #navbar .navbar-toggler {
-        display: none;
-        /* fuera el boton hamburguesa */
+    #navbar {
+        padding: 12px 0;
     }
 
     #navbar .navbar-collapse {
-        display: none !important;
-        /* fuera los links */
+        background-color: var(--azul-oscuro);
+        margin-top: 0.5rem;
+        border-radius: 20px;
+        padding: 1rem;
+    }
+
+    #navbar .navbar-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #navbar .nav-link {
+        padding: 0.75rem 1rem;
     }
 }
 
@@ -235,10 +245,8 @@ en pantalla grande: logo + links + boton
 
 /* ------------Sobre Nosotros ------------ */
 #sobre-nosotros {
-
     margin-top: 70px;
-    height: 298px;
-
+    padding: 50px 0;
 }
 
 #sobre-nosotros p {
@@ -290,7 +298,7 @@ en pantalla grande: logo + links + boton
 #servicios {
     margin: 10px;
     margin-top: 60px;
-    height: 800px;
+    padding: 60px 20px;
     background: var(--fondo-azul-2);
     color: var(--texto-claro);
     border-radius: 70px;
@@ -330,10 +338,90 @@ en pantalla grande: logo + links + boton
 }
 
 #servicios .tarjeta .etiqueta {
-    width: 40%;
+    width: fit-content;
     color: var(--negro-texto);
     border: 1px solid var(--negro-texto);
     border-radius: 10px;
+}
+
+/* responsive helpers */
+@media (max-width: 991px) {
+    #hero h1 {
+        font-size: 2.2rem;
+        margin-top: 30px;
+    }
+
+    #hero {
+        border-radius: 40px;
+        padding-top: 140px;
+    }
+
+    #servicios {
+        margin: 0 10px;
+    }
+
+    #testimonios .testimonio {
+        max-width: 100%;
+    }
+
+    #proceso .col-lg-4,
+    #proceso .col-lg-8 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #proceso .col-lg-4 {
+        position: static;
+    }
+}
+
+@media (max-width: 767px) {
+    #hero h1 {
+        font-size: 1.9rem;
+    }
+
+    #hero p,
+    #sobre-nosotros p,
+    #proceso p,
+    #testimonios p {
+        font-size: 0.95rem;
+    }
+
+    #nav .boton,
+    #navbar .boton {
+        font-size: 0.85rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .logos-clientes {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+}
+
+.logos-clientes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.logos-clientes img {
+    max-width: 120px;
+    height: auto;
+    opacity: 0.85;
+}
+
+.testimonio {
+    max-width: 100%;
+    min-height: auto;
+    padding: 24px;
+}
+
+iframe {
+    border-radius: 30px;
+    min-height: 450px;
 }
 
 
@@ -400,69 +488,36 @@ en pantalla grande: logo + links + boton
     color: var(--negro-texto);
 }
 
-.paso1 p {
-   
-    margin-left: 20px;
-    margin-right: 30px;
+#proceso .paso1 p,
+#proceso .paso2 p,
+#proceso .paso3 p,
+#proceso .paso4 p {
+    margin: 0;
+    padding-top: 14px;
+    line-height: 1.7;
 }
 
-.paso2 p {
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+#proceso .paso1,
+#proceso .paso2,
+#proceso .paso3,
+#proceso .paso4 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 32px;
+    color: var(--texto-claro);
+    border-radius: 30px;
+    background-color: var(--azul-oscuro);
+    padding: 24px;
 }
 
-.paso3 p {
-    margin-top: 2px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.paso4 p {
-    margin-top: 2px;
-    margin-left: 30px;
-    margin-right: 30px;
+#proceso .paso2,
+#proceso .paso4 {
+    background-color: var(--gris);
+    color: var(--negro-texto);
 }
 
 #proceso .paso1 {
-
-    width: 55%;
-    height: 300px;
-    margin-left: 10%;
-    color: var(--texto-claro);
-    border-radius: 30px;
-    background-color: var(--azul-oscuro);
-}
-
-#proceso .paso2 {
-    margin-top: 32px;
-    width: 55%;
-    height: 228.86px;
-    margin-left: 10%;
-    color: var(--negro-texto);
-    border-radius: 30px;
-    background-color: var(--gris);
-}
-
-#proceso .paso3 {
-    margin-top: 32px;
-    width: 55%;
-    height: 228.86px;
-    margin-left: 10%;
-    color: var(--texto-claro);
-    border-radius: 30px;
-    background-color: var(--azul-oscuro);
-
-}
-
-#proceso .paso4 {
-    margin-top: 32px;
-    width: 55%;
-    height: 228.86px;
-    margin-left: 10%;
-    color: var(--negro-texto);
-    border-radius: 30px;
-    background-color: var(--gris);
+    margin-top: 0;
 }
 
 
@@ -470,11 +525,11 @@ en pantalla grande: logo + links + boton
 
 #testimonios {
     margin-top: 20px;
-    height: 700 .28px;
+    padding: 60px 20px;
     border-radius: 70px;
     color: var(--texto-claro);
     background: var(--fondo-azul-1);
-}   
+}
 
 #testimonios .etiqueta {
     display: inline-block;
@@ -486,56 +541,50 @@ en pantalla grande: logo + links + boton
 }
 
 #testimonios .text-center {
-    text-align: start;
-    width: 45%;
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
 }
 
 #testimonios .testimonio {
-    max-width: 445.6px;
-    height: 224.46px;
+    width: 100%;
+    max-width: 100%;
     color: var(--negro-texto);
     border-radius: 10px;
     background: var(--fondo-blanco);
+    padding: 24px;
 }
 
 .testimonio img {
-    margin-left: 20px;
+    margin-left: 0;
     border-radius: 100px;
     display: inline-block;
-    width: 29.3px;
-    height: 31px;
+    width: 40px;
+    height: 40px;
 }
 
 .star {
-    width: 78px;
-    height: 11px;
-    margin-left: 30px;
-   
-    
-}
-
-.testimonio small {
-    margin-left: 30px;
-}
-
-.testimonio p {
-      line-height: 1.0;
-    font-style: italic;
-    font-size: 16px;
-    margin-left: 30px;
-    margin-right: 10px;
-}
-
-/* ---------------logos----------------------- */
-.logos-cliente{
+    width: auto;
+    height: auto;
+    margin: 1rem 0 0 0;
     display: inline-block;
 }
 
-#testimonios .text-center {
-    text-align: start;
-    width: 100%;
-    border-top: 3px solid var(--texto-claro);
-    padding-top: 30px;
+.testimonio small {
+    display: block;
+    margin-top: 0.75rem;
+}
+
+.testimonio p {
+    line-height: 1.6;
+    font-style: italic;
+    font-size: 0.98rem;
+    margin: 1rem 0 0 0;
+}
+
+/* ---------------logos----------------------- */
+.logos-cliente {
+    display: inline-block;
 }
 
 .logos-clientes {
@@ -622,7 +671,7 @@ en pantalla grande: logo + links + boton
 /* ------CONTACTO------ */
 #contacto {
     margin-top: 20px;
-    height: 600px;
+    padding: 60px 0;
     border-radius: 70px;
     background: var(--fondo-azul-2);
     color: var(--texto-claro);

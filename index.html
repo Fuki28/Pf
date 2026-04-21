@@ -1,0 +1,599 @@
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- esto hace que el celular no haga zoom -->
+        <title>LLC - Liberty Legal Corporate</title>
+
+        <!-- Fuentes de Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Unbounded:wght@200..900&display=swap"
+            rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css"> 
+
+        <!-- Nuestros estilos -->
+        <link rel="stylesheet" href="estilos/estilos.css">
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            
+            <!-- navbar-expand-lg: en pantalla grande muestra los links, en celular los esconde y aparece el boton hamburguesa -->
+            <div class="container"> <!-- container: centra todo y le pone margenes a los lados -->
+
+                <!-- Logo -->
+                <a href="#hero" class="navbar-brand">
+                    <img src="img/logo menu.webp" alt="Liberty Legal Corporate" class="logo">
+                </a>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">La Firma</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Áreas de Práctica</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#proceso">Proceso</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    </ul>
+                </div>
+
+                <a href="#contacto" class="boton ms-auto ms-lg-3">
+                    ¡Necesito un Aliado!
+                </a>
+
+            </nav>
+            
+            <!-- SECCION 1 -->
+            <section id="hero">
+                <div class="container">
+                    <div class="row align-items-center"> <!-- row: crea una fila, align-items-center: centra verticalmente -->
+                        
+                        <!-- en pantalla grande ocupa la mitad, en celular ocupa todo el ancho -->
+                        <div class="col-lg-6">
+                            <h1>Tu <span>ALIADO</span> en soluciones legales</h1>
+                            <p>El manejo de un asunto jurídico exige más que intervención puntual.
+                                Requiere seguimiento, criterio y una estructura clara de actuación
+                                desde el inicio. LLC asume cada caso con responsabilidad directa.</p>
+                                <p>Se revisa, se ordena y se conduce bajo fundamentos que puedan sostenerse en el tiempo.</p>
+                                <a href="#contacto" class="boton">¡Necesito un Aliado!</a>
+                            </div>
+                            
+                            <!-- logo grande, en pantalla grande ocupa la otra mitad, en celular se pone abajo -->
+                            <div class="col-lg-6 text-center">
+                                <svg width="340" height="311" viewBox="0 0 340 311" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                            d="M332.729 187.647C330.099 170.996 324.219 150.156 312.304 138.159C296.985 122.697 275.218 115.922 253.812 119.697C233.077 123.317 218.635 139.089 210.898 157.913C201.149 181.7 199.911 214.331 203.832 239.773C213.838 237.033 222.4 226.225 226.836 217.382C230.808 209.47 233.438 201.558 236.069 192.87L243.084 192.819L241.64 249.237H205.998C209.454 262.372 215.282 274.111 224.515 283.522C236.12 296.088 252.007 302.708 269.132 301.932C277.849 301.725 285.74 299.501 293.735 296.192C303.329 292.21 311.375 285.953 317.204 277.162C325.766 264.337 330.821 249.806 332.833 234.602L338.764 234.654V301.57C336.804 301.725 334.896 301.777 332.729 301.725C331.079 294.382 328.397 287.866 323.909 281.661C310.344 297.795 292.033 307.672 271.195 309.689C257.01 310.878 243.135 309.792 229.57 305.241C203.728 296.554 183.664 275.714 175.411 249.185H73.3346L73.283 242.618C84.4758 242.411 101.136 244.221 103.148 228.966C104.334 220.071 104.282 211.176 104.334 202.127L104.386 192.301L0.555486 192.353L0.503906 185.786C11.903 185.631 28.6665 187.389 30.4718 171.72C31.555 162.101 31.6581 152.741 31.6581 142.864V48.334C31.6581 40.2669 31.4518 32.7686 31.0392 24.8048C30.6265 17.048 28.5633 9.60139 19.8979 8.20515C13.3473 7.1709 7.20928 7.1709 0.503906 7.1709L0.555486 0.5H95.7202L95.7718 7.22262C87.9317 7.17091 80.6074 7.06748 72.9735 7.94659C67.0419 8.67056 62.6576 12.4973 61.6776 18.6511C60.4396 26.8216 60.2333 34.8888 60.2333 43.473V153.465C60.2333 159.878 60.5428 165.566 60.9554 171.823C61.3165 177.822 65.0818 182.735 71.1167 184.131C75.7588 185.217 80.6074 185.734 85.5074 185.734H104.489L104.437 105.218C104.437 96.9954 104.231 89.342 103.767 81.1714C103.302 73.518 101.085 66.4334 92.677 65.0888C86.1264 64.0546 79.9884 64.0546 73.283 64.0546L73.3346 57.3837H168.499L168.551 64.1063C160.711 64.0546 153.386 63.9512 145.753 64.8303C139.821 65.5542 135.437 69.381 134.457 75.5348C133.219 83.6536 133.012 91.7725 133.012 100.305L132.961 182.166C150.601 175.029 158.441 152.741 163.445 135.883L170.408 135.831L168.912 192.353H132.909L133.58 228.19C133.838 234.602 137.603 239.36 143.793 241.066C148.332 241.894 152.974 242.566 157.668 242.566L173.451 242.618C166.694 211.642 171.027 178.494 187.223 151.19C195.94 136.504 208.474 125.489 224.051 118.766C238.338 112.613 253.503 110.337 269.08 111.578C282.027 112.664 293.838 116.698 304.773 123.472C311.891 127.868 318.236 132.625 323.858 139.503C327.881 131.488 329.996 123.576 330.976 114.836H337.062L338.713 187.699L332.729 187.647Z"
+                            fill="white" stroke="#022032" stroke-miterlimit="10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SECCION 1.5 -->
+        <section id="stats">
+            <div class="container">
+                <div class="row text-center"> <!-- row: los 4 numeros van en una fila -->
+                    
+                    <!-- col-6: en celular se muestran 2 por fila, col-lg-3: en pantalla grande los 4 en una sola fila -->
+                    <div class="col-6 col-lg-3">
+                        <h2>5+</h2>
+                        <p>Años de experiencia</p>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <h2>250+</h2>
+                        <p>Casos Atendidos</p>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <h2>200+</h2>
+                        <p>Casos de Éxito</p>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <h2>97%</h2>
+                        <p>Valoración del Servicio</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </section>
+        
+        <!-- SECCION 2 -->
+        <section id="sobre-nosotros">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- lado izquierdo en pantalla grande, arriba en celular -->
+                    <div class="col-lg-5">
+                        <p class="etiqueta">SOBRE NOSOTROS</p>
+                        <h2>El derecho se ejerce mejor cuando cada caso tiene
+                            <span class="dorado">NOMBRE PROPIO</span>
+                        </h2>
+                    </div>
+
+                    <!-- lado derecho en pantalla grande, abajo en celular -->
+                    <div class="col-lg-7">
+                        <h3>Liberty Legal Corporate parte de una premisa concreta:
+                            <span class="dorado">Cada caso merece más</span>
+                        </h3>
+                        <p>Combinamos el pensamiento estratégico con una ejecución precisa para guiar a los clientes
+                            a través de situaciones complejas con confianza. Nuestro enfoque está fundamentado en el
+                            profesionalismo, la discreción y un profundo compromiso con lograr los mejores resultados
+                            posibles. Porque su caso merece más que una asesoría, merece una defensa.</p>
+                        <a href="#contacto" class="boton">¡Necesito trabajar con ustedes!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION 3 -->
+        <section id="servicios">
+            <div class="container">
+
+                <!-- encabezado de la seccion en dos columnas -->
+                <div class="row mb-4">
+                    <div class="col-lg-6">
+                        <p class="etiqueta">NUESTROS SERVICIOS</p>
+                        <h2>ÁREAS DE PRÁCTICA</h2>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-end"> <!-- d-flex align-items-end: pega el texto abajo -->
+                        <p>Ofrecemos servicios legales confiables con experiencia comprobada y un enfoque centrado en
+                            resultados.</p>
+                    </div>
+                </div>
+
+                <!-- carrusel de bootstrap, muestra 3 tarjetas por pantalla -->
+                <div id="carrusel" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                    <div class="carousel-inner">
+
+                        <!-- pantalla 1 del carrusel -->
+                        <div class="carousel-item active">
+                            <div class="row g-2"> <!-- g-2: espacio entre tarjetas -->
+
+                                <div class="col-lg-4"> <!-- col-lg-4: 3 tarjetas en fila en pantalla grande -->
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">CORPORATIVO</p>
+                                        <img src="img/derecho-corp.webp" alt="Derecho Corporativo" width="301.07 px">
+                                        <h4>Derecho corporativo y comercial</h4>
+                                        <p>Acompañamiento legal a empresas en su funcionamiento ordinario, ya sea
+                                            constitución,
+                                            estructura operativa, elaboración y revisión de contratos, y principalmente toma
+                                            de decisiones con implicación jurídica.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">CIVIL</p>
+                                        <img src="img/civil.webp" alt="Relaciones y Obligaciones" width="301.07 px">
+                                        <h4>Relaciones y obligaciones</h4>
+                                        <p>Intervención en conflictos derivados de deudas, incumplimientos y
+                                            responsabilidades
+                                            civiles, estableciendo una base legal clara para su resolución o reclamación.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">LABORAL</p>
+                                        <img src="img/laboral.webp" alt="Derecho Laboral" width="301.07 px">
+                                        <h4>Empleador y trabajador</h4>
+                                        <p>Asesoría en contratación, terminación laboral, conflictos individuales y
+                                            cumplimiento de obligaciones laborales.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- pantalla 2 del carrusel -->
+                        <div class="carousel-item">
+                            <div class="row g-2">
+
+                                <div class="col-lg-4">
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">SOCIETARIO</p>
+                                        <img src="img/societario.webp" alt="Societario" width="301.07 px">
+                                        <h4>Estructura y dinámica empresarial</h4>
+                                        <p>Asesoría en la organización interna de sociedades, relaciones entre socios,
+                                            reformas estatutarias y resolución de conflictos corporativos.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">TRIBUTARIO</p>
+                                        <img src="img/tributario.webp" alt="Tributario" width="301.07 px">
+                                        <h4>Obligaciones fiscales</h4>
+                                        <p>Análisis y cumplimiento de cargas tributarias, planificación fiscal y atención
+                                            de requerimientos de la administración.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">INQUILINATO</p>
+                                        <img src="img/inquilinato.webp" alt="Inquilinato" width="301.07 px">
+                                        <h4>Arrendamientos y conflictos derivados</h4>
+                                        <p>Gestión de relaciones entre arrendador e inquilino, cumplimiento de contratos,
+                                            recuperación de inmuebles y resolución de controversias.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- pantalla 3 del carrusel -->
+                        <div class="carousel-item">
+                            <div class="row g-2">
+
+                                <div class="col-lg-4">
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">RECUPERACIÓN DE CARTERA</p>
+                                        <img src="img/recup-cartera.webp" alt="Recuperación de Cartera" width="301.07 px">
+                                        <h4>Obligaciones pendientes</h4>
+                                        <p>Estructuración de procesos para el cobro de deudas, priorizando vías legales
+                                            que permitan una recuperación efectiva.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">FAMILIA</p>
+                                        <img src="img/familia.webp" alt="Familia" width="301.07 px">
+                                        <h4>Relaciones jurídicas personales</h4>
+                                        <p>Procesos de divorcio, pensiones y custodia abordados con criterio jurídico
+                                            claro, buscando ordenar situaciones que requieren estabilidad legal.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">SUCESORIO</p>
+                                        <img src="img/sucesorio.webp" alt="Sucesorio" width="301.07 px">
+                                        <h4>Transmisión y orden patrimonial</h4>
+                                        <p>Asesoría en procesos de herencia, partición de bienes y planificación sucesoria,
+                                            estableciendo una distribución clara del patrimonio.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- pantalla 4 del carrusel -->
+                        <div class="carousel-item">
+                            <div class="row g-2">
+
+                                <div class="col-lg-4">
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">PROPIEDAD INTELECTUAL</p>
+                                        <img src="img/propi-intelect.webp" alt="Propiedad Intelectual" width="301.07 px">
+                                        <h4>Protección de activos intangibles</h4>
+                                        <p>Registro y defensa de derechos sobre marcas, obras y creaciones, garantizando
+                                            su uso exclusivo y evitando vulneraciones.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">ADMINISTRATIVO</p>
+                                        <img src="img/administr.webp" alt="Administrativo" width="301.07 px">
+                                        <h4>Administración con entidades del Estado</h4>
+                                        <p>Gestión de procedimientos administrativos, recursos y defensa ante actuaciones
+                                            de entidades del Estado.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="tarjeta">
+                                        <p class="etiqueta">DERECHO DE COMPETENCIA</p>
+                                        <img src="img/competencia.webp" alt="Derecho de Competencia" width="301.07 px">
+                                        <h4>Regulación del mercado</h4>
+                                        <p>Asesoría en prácticas comerciales, prevención de conductas restrictivas y
+                                            cumplimiento de normativa de competencia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- flechas para pasar de pantalla en el carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION 4 -->
+        <section id="proceso">
+            <div class="container">
+                <div class="row">
+
+                    <!-- descripcion del proceso, lado izquierdo en pantalla grande -->
+                    <div class="col-lg-4">
+                        <p class="etiqueta">PROCESO</p>
+
+                        <h2>Proceso LLC</h2>
+                        <div class="procesollc">
+
+                            <p>El tratamiento de cada caso sigue una secuencia definida. Desde la revisión inicial
+                                hasta su resolución, el proceso se estructura para resguardar sus intereses y sostener
+                                decisiones jurídicas consistentes.</p>
+                                <a href="#contacto" class="boton">¡Quiero empezar YA!</a>
+                            </div>
+                    </div>
+
+                    <!-- los 4 pasos, lado derecho en pantalla grande -->
+                    <div class="col-lg-8">
+
+                        <div class="paso1">
+                            <h3 class="numero">01</h3>
+                            <div>
+                                <h4>Revisión inicial</h4>
+                                <p>Antes de cualquier intervención, se examina el caso a partir de la información
+                                    proporcionada. Se identifican los elementos jurídicos relevantes y las posibles
+                                    vías de actuación, descartando aproximaciones imprecisas desde el inicio.</p>
+                            </div>
+                        </div>
+
+                        <div class="paso2">
+                            <h3 class="numero">02</h3>
+                            <div>
+                                <h4>Planteamiento del caso</h4>
+                                <p>Se expone la estructura del asunto; alcance, implicaciones y escenario legal.
+                                    Este punto le va a permitir comprender la posición desde la cual se trabajará.</p>
+                            </div>
+                        </div>
+
+                        <div class="paso3">
+                            <h3 class="numero">03</h3>
+                            <div>
+                                <h4>Definición de estrategia</h4>
+                                <p>Con el caso delimitado, se establece una línea de acción coherente y jurídicamente
+                                    sostenible, orientada a conducir el proceso sin desviaciones innecesarias.</p>
+                            </div>
+                        </div>
+
+                        <div class="paso4">
+                            <h3 class="numero">04</h3>
+                            <div>
+                                <h4>Ejecución y seguimiento</h4>
+                                <p>El caso se desarrolla con control continuo, ajustando únicamente cuando el proceso
+                                    lo exige, asegurando que cada paso responda a la línea jurídica establecida.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION 5 -->
+        <section id="testimonios">
+            <div class="container">
+
+                <p class="etiqueta">TESTIMONIOS</p>
+                <h2 class="text-center">Casos atendidos, desde la experiencia del cliente</h2>
+
+                <!-- dos testimonios lado a lado en pantalla grande, uno abajo del otro en celular -->
+                <div class="row g-4 mt-3">
+
+                    <div class="col-lg-6"> <!-- col-lg-6: cada testimonio ocupa la mitad en pantalla grande -->
+                        <div class="testimonio">
+                            <img src="img/wahatssap.webp" alt="whatsapp">
+                            <strong>Jorge L.(Inquilinato)</strong>
+                        
+                            <p class="star">★★★★★</p>
+                            <p>"Estoy muy agradecido con ustedes. Resolvieron mi problema con un arrendamiento
+                                que ya se había extendido demasiado. Tomaron el control de mi caso y lo ejecutaron
+                                para resolverlo dentro del marco legal, y más que todo no me dieron complicaciones
+                                y me explicaron todo muy claro. Gracias."</p>
+                                <small>✔ Cliente Verificado</small>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <div class="testimonio">
+                            <img src="img/wahatssap.webp" alt="whatsapp">
+                            <strong>Steve B.(Conflicto civil)</strong>
+                            
+                            <p class="star">★★★★★</p>
+                            <p>"Llegué con una deuda que no lograba resolver desde hace tiempo. Aquí ordenaron
+                                el caso desde el inicio y definieron exactamente qué hacer. El proceso avanzó sin
+                                cambios innecesarios y finalmente pude recuperar lo que correspondía."</p>
+                            <small>✔ Cliente Verificado</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- logos de los clientes  -->
+                <div class="text-center mt-5">
+                    <p>Clientes que <span>CONFIARON</span> en nosotros</p>
+                    <div class="logos-clientes">
+                        <img src="img/GELBP.webp" alt="GEL BP">
+                        <img src="img/KOCOAPLAZA.webp" alt="Kocoa Plaza">
+                        <img src="img/GENESISSUP.webp" alt="Genesis Support">
+                        <img src="img/AEDIFICAREM.webp" alt="AECOFICAREM">
+                        <img src="img/BYC.webp" alt="B&C">
+                        <img src="img/COCINAFUSION.webp" alt="K">
+                        <img src="img/WORQ.webp" alt="WorQ">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCION 6 -->
+        <section id="faqs">
+            <div class="container">
+                <div class="row">
+
+                    <!-- lado izquierdo en pantalla grande -->
+                    <div class="col-lg-4">
+                        <p class="etiqueta">FAQs</p>
+                        <h2>Antes de avanzar, conviene tener <span>claridad</span></h2>
+                        <p>Iniciar un asunto legal implica tomar decisiones que deben estar bien fundadas
+                            desde el principio. Estas preguntas recogen los aspectos esenciales que suelen
+                            surgir antes de exponer un caso.</p>
+                        <a href="#contacto" class="boton">
+                            Estoy listo para empezar</a>
+                    </div>
+
+                    <!-- acordeon de bootstrap, lado derecho en pantalla grande -->
+                    <!-- el acordeon se abre y se cierra solo, bootstrap lo maneja -->
+                    <div class="col-lg-8">
+                        <div class="accordion" id="preguntas">
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#p1">
+                                        ¿Qué ocurre después de enviar mi caso?
+                                    </button>
+                                </h3>
+                                <div id="p1" class="accordion-collapse collapse" data-bs-parent="#preguntas">
+                                    <div class="accordion-body">
+                                        Se realiza una revisión inicial de la información proporcionada para identificar
+                                        su estructura jurídica y determinar si procede una intervención y qué pasos
+                                        debemos seguir para que el caso tenga éxito.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#p2">
+                                        ¿Recibiré una respuesta concreta o general?
+                                    </button>
+                                </h3>
+                                <div id="p2" class="accordion-collapse collapse" data-bs-parent="#preguntas">
+                                    <div class="accordion-body">
+                                        La respuesta se basa en el contenido del caso. Se entrega un criterio jurídico
+                                        inicial, no una aproximación genérica.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#p3">
+                                        ¿Es necesario adjuntar documentos?
+                                    </button>
+                                </h3>
+                                <div id="p3" class="accordion-collapse collapse" data-bs-parent="#preguntas">
+                                    <div class="accordion-body">
+                                        No es obligatorio en el primer contacto, pero facilita una valoración más
+                                        precisa y reduce interpretaciones incompletas.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#p4">
+                                        ¿Cómo se define el costo del servicio?
+                                    </button>
+                                </h3>
+                                <div id="p4" class="accordion-collapse collapse" data-bs-parent="#preguntas">
+                                    <div class="accordion-body">
+                                        Depende del tipo de asunto, su complejidad y el alcance requerido. Las
+                                        condiciones y honorarios se establecen con claridad antes de iniciar.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#p5">
+                                        ¿Mi caso será tratado directamente por la firma?
+                                    </button>
+                                </h3>
+                                <div id="p5" class="accordion-collapse collapse" data-bs-parent="#preguntas">
+                                    <div class="accordion-body">
+                                        Sí. Cada asunto se asume con seguimiento directo con el abogado especialista,
+                                        sin intermediaciones innecesarias.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECCION 7 -->
+        <section id="contacto">
+            <div class="container">
+                <div class="row">
+
+                    <!-- info de contacto, lado izquierdo en pantalla grande -->
+                    <div class="col-lg-5">
+                        <p class="etiqueta">CONTACTO</p>
+                        <h2>Hablemos de su asunto Legal</h2>
+                        <a href="#contacto" class="boton">¡Conversemos!</a>
+                        <p>¿Tienes una pregunta legal o necesitas orientación profesional? Contáctanos para
+                            programar una consulta y recibir asesoría legal clara y confidencial adaptada a
+                            tus necesidades.</p>
+                        <!-- link directo a whatsapp -->
+                        <a href="https://wa.me/593962693162" target="_blank" class="whatsapp">
+                            <span>
+                                <strong>WhatsApp</strong><br>
+                                +593 96 269 3162
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- formulario de tally, lado derecho en pantalla grande -->
+                    <!-- ir a tally.so, crear el formulario y pegar el link del embed en el src -->
+                    <div class="col-lg-7">
+                        <form class="form" action="https://formsubmit.co/TUCORREO@gmail.com" method="POST">
+                            <iframe
+                                src="https://tally.so/r/dW2vDV"
+                                width="100%" height="500" frameborder="0" title="Formulario de contacto"
+                                loading="lazy">
+                            </iframe>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="container text-center">
+                <p>© 2026 Liberty Legal Corporate. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+
+        <!-- Bootstrap JS: necesario para el menu hamburguesa, el carrusel y el acordeon -->
+        <script src="public/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+    </html>
