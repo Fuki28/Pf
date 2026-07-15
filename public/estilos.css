@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+
+:root {
+    --dorado: #C5A454;
+    --texto-claro: #EAECEF;
+    --fondo-blanco: #FFFFFF;
+    --fondo-azul-1: linear-gradient(180deg, #022032 25%, #066198 100%);
+    --fondo-azul-2: linear-gradient(180deg, #066198 0%, #022032 100%);
+    --azul-oscuro: #022032;
+    --negro-texto: #000000;
+    --gris: #EAECEF;
+}
+
+/* globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background-color: var(--fondo-blanco);
+    font-family: 'Outfit', sans-serif;
+    color: var(--azul-oscuro);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Unbounded', sans-serif;
+}
+
+h4 {
+    font-family: 'Outfit', sans-serif;
+}
